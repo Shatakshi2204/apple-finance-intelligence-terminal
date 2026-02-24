@@ -1,0 +1,68 @@
+.reports-container {
+
+padding: 40px;
+
+color: white;
+
+}
+
+
+.reports-title {
+
+font-size: 28px;
+
+margin-bottom: 20px;
+
+}
+
+
+.generate-btn {
+
+background: white;
+
+color: black;
+
+border: none;
+
+padding: 12px 20px;
+
+font-size: 16px;
+
+cursor: pointer;
+
+margin-bottom: 30px;
+
+border-radius: 6px;
+
+}
+
+
+.report-box {
+
+background: rgba(255,255,255,0.05);
+
+padding: 30px;
+
+border-radius: 12px;
+
+line-height: 1.7;
+
+}
+
+
+.report-box h3 {
+
+margin-top: 20px;
+
+color: #00ffaa;
+
+}
+
+
+.recommendation {
+
+font-weight: bold;
+
+font-size: 18px;
+
+}

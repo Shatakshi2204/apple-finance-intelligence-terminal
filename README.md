@@ -1,70 +1,68 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🍎 Apple Financial Intelligence Terminal
+🔗 Live Application: https://apple-finance-intelligence.vercel.app
+Overview:
+Apple Financial Intelligence Terminal is a real-time financial analytics platform designed to monitor, analyze, and evaluate Apple Inc. from an investor and strategic finance perspective.
+This project replicates the core thinking behind professional equity research terminals used in investment banks, hedge funds, and corporate finance teams.
+It combines live market data, valuation models, portfolio simulation, and executive reporting into a unified decision-intelligence interface.
+Key Features:
+📈 Real-Time Market Intelligence
+• Live Apple stock price
+• Market capitalization tracking
+• Trading volume monitoring
+• 52-week high and low analysis
+• Previous close comparison
+🧠 Financial Intelligence Dashboard
+• Executive-level overview terminal
+• Live price visualization
+• Multi-page financial interface
+• Clean, Apple-inspired UI
+💰 Valuation Engine
+• Intrinsic value estimation
+• Financial modeling logic
+• Investment decision support
+📊 Portfolio Simulator
+• Investment scenario analysis
+• Future value projections
+• Profit and return estimation
+📄 Executive Report Generator
+• Automated financial reports
+• Strategic investment insights
+• Decision-ready summaries
+☁️ Production Deployment
+• Fully live cloud application
+• Serverless backend architecture
+• Production-ready deployment
+Technology Stack:
+Frontend
+React.js
+JavaScript
+Recharts
+Backend
+Vercel Serverless Functions
+Data Source
+Finnhub Financial API
+Deployment
+Vercel Cloud Platform
+Architecture
+Frontend (React)
+⬇
+Serverless API (Vercel)
+⬇
+Finnhub Financial Data
+⬇
+Live Financial Intelligence Output
+Purpose
+This project demonstrates:
+• Financial analysis capability
+• Real-time data integration
+• Investment intelligence development
+• Production-level application deployment
+• Strategic finance thinking
+Live Terminal
+Access the production version:
+https://apple-finance-intelligence.vercel.app
+Author
+Shatakshi Guha
+Why This Project Stands Out
+Unlike static academic dashboards, this platform operates on live financial data and simulates real-world investment analysis workflows.
+It reflects the intersection of finance, data, and decision intelligence used in modern financial institutions.

@@ -1,68 +1,178 @@
-🍎 Apple Financial Intelligence Terminal
-🔗 Live Application: https://apple-finance-intelligence.vercel.app
-Overview:
-Apple Financial Intelligence Terminal is a real-time financial analytics platform designed to monitor, analyze, and evaluate Apple Inc. from an investor and strategic finance perspective.
-This project replicates the core thinking behind professional equity research terminals used in investment banks, hedge funds, and corporate finance teams.
-It combines live market data, valuation models, portfolio simulation, and executive reporting into a unified decision-intelligence interface.
-Key Features:
-📈 Real-Time Market Intelligence
-• Live Apple stock price
-• Market capitalization tracking
-• Trading volume monitoring
-• 52-week high and low analysis
-• Previous close comparison
-🧠 Financial Intelligence Dashboard
-• Executive-level overview terminal
-• Live price visualization
-• Multi-page financial interface
-• Clean, Apple-inspired UI
-💰 Valuation Engine
-• Intrinsic value estimation
-• Financial modeling logic
-• Investment decision support
-📊 Portfolio Simulator
-• Investment scenario analysis
-• Future value projections
-• Profit and return estimation
-📄 Executive Report Generator
-• Automated financial reports
-• Strategic investment insights
-• Decision-ready summaries
-☁️ Production Deployment
-• Fully live cloud application
-• Serverless backend architecture
-• Production-ready deployment
-Technology Stack:
-Frontend
-React.js
-JavaScript
-Recharts
-Backend
-Vercel Serverless Functions
-Data Source
-Finnhub Financial API
-Deployment
-Vercel Cloud Platform
-Architecture
-Frontend (React)
-⬇
-Serverless API (Vercel)
-⬇
-Finnhub Financial Data
-⬇
-Live Financial Intelligence Output
-Purpose
-This project demonstrates:
-• Financial analysis capability
-• Real-time data integration
-• Investment intelligence development
-• Production-level application deployment
-• Strategic finance thinking
-Live Terminal
-Access the production version:
+# 🍎 Apple Finance Intelligence
+
+> Institutional-grade Apple Inc. financial intelligence dashboard built for real-time equity research, financial analysis, and investment insights.
+
+🌐 **Live Demo:** https://apple-finance-intelligence.vercel.app
+
+---
+
+## ✨ Overview
+
+Apple Finance Intelligence is a modern financial analytics platform designed to deliver clean, intuitive, and data-driven insights into Apple Inc. (AAPL).
+
+It transforms raw financial data into actionable intelligence through an elegant and responsive interface.
+
+Built with the mindset of a **buy-side equity research analyst and financial data scientist**, this platform enables faster, smarter, and more confident investment analysis.
+
+---
+
+## 🚀 Key Features
+
+### 📊 Market Intelligence
+- Real-time Apple stock price tracking
+- Price change and movement analysis
+- Institutional-style overview dashboard
+
+### 📈 Financial Analysis
+- Company performance insights
+- Structured financial data visualization
+- Key financial metrics tracking
+
+### 🧠 Investor-Focused Design
+- Clean, minimal, Bloomberg-inspired interface
+- Decision-focused dashboard layout
+- Zero clutter, maximum insight
+
+### ⚡ Performance Optimized
+- Fast loading
+- Lightweight architecture
+- Fully responsive design
+
+---
+
+## 🛠️ Tech Stack
+
+Frontend:
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+
+Deployment:
+- Vercel
+
+Data Handling:
+- Financial APIs
+- Real-time data integration
+
+---
+
+## 🧱 Architecture
+User
+↓
+React Frontend
+↓
+API Integration Layer
+↓
+Financial Data Source
+↓
+Dashboard Visualization
+
+
+---
+
+## 📸 Preview
+
+Live Site:
 https://apple-finance-intelligence.vercel.app
-Author
+
+---
+
+## 🎯 Purpose
+
+This project was built to demonstrate:
+
+• Financial analysis capability  
+• Equity research thinking  
+• Data interpretation skills  
+• Frontend engineering ability  
+• Real-world financial dashboard development  
+
+---
+
+## 💼 Use Cases
+
+Perfect for:
+
+- Equity Research Internships
+- Investment Analyst Roles
+- Financial Analyst Roles
+- Data Analyst Roles
+- Quantitative Finance Roles
+- Finance + Tech Hybrid Roles
+
+---
+
+## 🧩 Future Enhancements
+
+Planned upgrades:
+
+- Multi-company support
+- Financial statements (Income Statement, Balance Sheet, Cash Flow)
+- Interactive charts
+- Ratio analysis
+- Portfolio tracker
+- Valuation models (DCF, Multiples)
+- Earnings analysis
+- Analyst recommendation tracking
+
+---
+
+## 🧑‍💻 Installation
+
+Clone repository:
+
+``bash
+git clone https://github.com/Shatakshi2204/apple-finance-intelligence-terminal/.git
+
+Install dependencies:
+
+npm install
+
+Run locally:
+
+npm start``
+
+🌍 Deployment
+
+Deployed using:
+
+Vercel
+
+📊 What makes this different
+
+This is not just a UI project.
+
+This is a financial intelligence tool built with understanding of:
+
+Markets
+
+Investing
+
+Equity research workflows
+
+Financial data interpretation
+
+🧠 Author
+
 Shatakshi Guha
-Why This Project Stands Out
-Unlike static academic dashboards, this platform operates on live financial data and simulates real-world investment analysis workflows.
-It reflects the intersection of finance, data, and decision intelligence used in modern financial institutions.
+
+Finance • Data • Technology
+
+Building at the intersection of:
+
+Finance
+
+Data Analytics
+
+Technology
+
+⭐ If you found this useful
+
+Give it a star ⭐
+
+⚠️ Disclaimer
+
+This project is for educational and informational purposes only.
+
+Not financial advice.

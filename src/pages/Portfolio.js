@@ -2,17 +2,33 @@ import { useState } from "react";
 
 function Portfolio({ stock }) {
 
-const [shares, setShares] = useState(10);
+const [portfolio, setPortfolio] = useState([
+{ symbol: "AAPL", shares: 10, cost: 180 }
+]);
 
-const costPrice = 180;
+const currentPrice = stock.price;
 
-const currentValue = shares * stock.price;
+const totalInvested = portfolio.reduce(
+(sum, item) => sum + item.shares * item.cost, 0
+);
 
-const investedValue = shares * costPrice;
+const totalCurrent = portfolio.reduce(
+(sum, item) => sum + item.shares * currentPrice, 0
+);
 
-const profit = currentValue - investedValue;
+const totalProfit = totalCurrent - totalInvested;
 
-const returnPercent = (profit / investedValue) * 100;
+const totalReturn = (totalProfit / totalInvested) * 100;
+
+function updateShares(index, value){
+
+const newPortfolio = [...portfolio];
+
+newPortfolio[index].shares = value;
+
+setPortfolio(newPortfolio);
+
+}
 
 return (
 
@@ -22,78 +38,104 @@ return (
 
 <div className="card-title">
 
-Portfolio Tracker
+Portfolio Manager
 
 </div>
 
 
-<div className="portfolio-grid">
+<table className="portfolio-table">
 
-<div className="metric">
+<thead>
 
-<span>Shares Owned</span>
+<tr>
+
+<th>Symbol</th>
+
+<th>Shares</th>
+
+<th>Cost</th>
+
+<th>Value</th>
+
+<th>P/L</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+{portfolio.map((item, index)=>{
+
+const value = item.shares * currentPrice;
+
+const profit = value - (item.shares * item.cost);
+
+return (
+
+<tr key={index}>
+
+<td>{item.symbol}</td>
+
+<td>
 
 <input
 
-value={shares}
+value={item.shares}
 
-onChange={(e)=>setShares(e.target.value)}
+onChange={(e)=>updateShares(index, e.target.value)}
 
 className="portfolio-input"
 
 />
 
-</div>
+</td>
 
+<td>${item.cost}</td>
 
-<div className="metric">
+<td>${value.toFixed(2)}</td>
 
-<span>Invested Value</span>
-
-<b>
-
-${investedValue.toFixed(2)}
-
-</b>
-
-</div>
-
-
-<div className="metric">
-
-<span>Current Value</span>
-
-<b>
-
-${currentValue.toFixed(2)}
-
-</b>
-
-</div>
-
-
-<div className="metric">
-
-<span>Profit / Loss</span>
-
-<b style={{color: profit>=0 ? "#00ffaa" : "#ff4d4d"}}>
+<td style={{color: profit>=0 ? "#00ffaa" : "#ff4d4d"}}>
 
 ${profit.toFixed(2)}
 
-</b>
+</td>
+
+</tr>
+
+);
+
+})}
+
+</tbody>
+
+</table>
+
+
+<div className="portfolio-summary">
+
+<div>
+
+Invested: ${totalInvested.toFixed(2)}
 
 </div>
 
+<div>
 
-<div className="metric">
+Current: ${totalCurrent.toFixed(2)}
 
-<span>Return %</span>
+</div>
 
-<b style={{color: profit>=0 ? "#00ffaa" : "#ff4d4d"}}>
+<div style={{color: totalProfit>=0 ? "#00ffaa" : "#ff4d4d"}}>
 
-{returnPercent.toFixed(2)}%
+Profit: ${totalProfit.toFixed(2)}
 
-</b>
+</div>
+
+<div style={{color: totalProfit>=0 ? "#00ffaa" : "#ff4d4d"}}>
+
+Return: {totalReturn.toFixed(2)}%
 
 </div>
 

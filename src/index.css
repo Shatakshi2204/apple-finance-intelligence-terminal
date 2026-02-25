@@ -1,3 +1,55 @@
+body{
+background:#000;
+color:#fff;
+font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;
+margin:0;
+overflow-x:hidden;
+}
+
+/* APPLE GRADIENT TEXT */
+
+.apple-gradient{
+
+background: linear-gradient(
+90deg,
+#007aff,
+#5ac8fa,
+#af52de,
+#ff2d55,
+#ff9500
+);
+
+-webkit-background-clip: text;
+
+-webkit-text-fill-color: transparent;
+
+font-weight:600;
+
+}
+
+
+/* GLASS CARD */
+
+.glass{
+
+background: rgba(255,255,255,0.05);
+
+backdrop-filter: blur(20px);
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,0.1);
+
+}
+
+
+/* SMOOTH ANIMATION */
+
+.smooth{
+
+transition: all 0.4s cubic-bezier(0.25,0.1,0.25,1);
+
+}
 /* APPLE-LEVEL PREMIUM DESIGN */
 
 body {

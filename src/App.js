@@ -43,37 +43,51 @@ const [page, setPage] = useState("Overview");
 
 useEffect(() => {
 
-fetch("/api/stock")
+async function fetchData(){
 
-.then(res => res.json())
+try{
 
-.then(data => {
+const quote = await fetch(
+"https://finnhub.io/api/v1/quote?symbol=AAPL&token=d6etmj1r01qvn4o11jp0d6etmj1r01qvn4o11jpg"
+).then(res=>res.json());
 
-if(data){
+const profile = await fetch(
+"https://finnhub.io/api/v1/stock/metric?symbol=AAPL&metric=all&token=d6etmj1r01qvn4o11jp0d6etmj1r01qvn4o11jpg"
+).then(res=>res.json());
+
 
 setStock({
 
-price: data.price || 264.58,
-change: data.change || 0,
-volume: data.volume || 0,
-marketCap: data.marketCap || 0,
-high52: data.high52 || 0,
-low52: data.low52 || 0,
-previousClose: data.previousClose || 0
+price: quote.c,
+
+change: quote.dp,
+
+high: quote.h,
+
+low: quote.l,
+
+previousClose: quote.pc,
+
+volume: profile.metric["10DayAverageTradingVolume"],
+
+week52High: profile.metric["52WeekHigh"],
+
+week52Low: profile.metric["52WeekLow"]
 
 });
 
-setChartData(data.price || 264.58);
+generateChart(quote.c);
+
+}
+catch{
+
+generateChart(stock.price);
 
 }
 
-})
+}
 
-.catch(()=>{
-
-generateChart(264.58);
-
-});
+fetchData();
 
 }, []); 
 

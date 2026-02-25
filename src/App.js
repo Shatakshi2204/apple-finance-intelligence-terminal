@@ -164,6 +164,46 @@ LIVE
 </div>
 
 
+<div style={{
+
+display:"flex",
+
+gap:"40px",
+
+marginTop:"20px",
+
+color:"#86868b",
+
+fontSize:"14px"
+
+}}>
+
+<div>
+
+Volume: {stock.volume ? stock.volume.toLocaleString() : "-"}
+
+</div>
+
+<div>
+
+Day High: {stock.high ? stock.high.toFixed(2) : "-"}
+
+</div>
+
+<div>
+
+Day Low: {stock.low ? stock.low.toFixed(2) : "-"}
+
+</div>
+
+<div>
+
+Prev Close: {stock.previousClose ? stock.previousClose.toFixed(2) : "-"}
+
+</div>
+
+</div>
+  
 </div>
 
 

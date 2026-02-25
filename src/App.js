@@ -207,7 +207,62 @@ Prev Close: {stock.previousClose ? stock.previousClose.toFixed(2) : "-"}
 </div>
 
 
+<div className="metrics-container">
 
+<div className="metric-card">
+
+<div className="metric-label">Volume</div>
+
+<div className="metric-value">
+
+{stock.volume ? stock.volume.toLocaleString() : "--"}
+
+</div>
+
+</div>
+
+
+<div className="metric-card">
+
+<div className="metric-label">Day High</div>
+
+<div className="metric-value">
+
+{stock.high ? stock.high.toFixed(2) : "--"}
+
+</div>
+
+</div>
+
+
+<div className="metric-card">
+
+<div className="metric-label">Day Low</div>
+
+<div className="metric-value">
+
+{stock.low ? stock.low.toFixed(2) : "--"}
+
+</div>
+
+</div>
+
+
+<div className="metric-card">
+
+<div className="metric-label">Previous Close</div>
+
+<div className="metric-value">
+
+{stock.previousClose ? stock.previousClose.toFixed(2) : "--"}
+
+</div>
+
+</div>
+
+
+</div>
+  
 
 <div className="chart-box">
 

@@ -17,7 +17,7 @@ import Insights from "./pages/Insights";
 import Reports from "./pages/Reports";
 import Valuation from "./pages/Valuation";
 import Portfolio from "./pages/Portfolio";
-
+import Landing from "./pages/Landing"
 import "./index.css";
 
 
@@ -39,6 +39,7 @@ const [chartData, setChartData] = useState([]);
 
 const [page, setPage] = useState("Overview");
 
+const [entered,setEntered] = useState(false);
 
 
 useEffect(() => {
@@ -111,7 +112,11 @@ if(page==="Reports") return <Reports stock={stock}/>;
 
 }
 
+if(!entered){
 
+return <Landing
+enter={()=>setEntered(true)} />  
+}
 
 
 return(

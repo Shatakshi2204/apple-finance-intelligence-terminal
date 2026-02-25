@@ -1,136 +1,105 @@
 import { useState } from "react";
 
+function Portfolio({ stock }) {
 
-function Portfolio({ stock }){
+const [shares, setShares] = useState(10);
 
+const costPrice = 180;
 
-const [amount,setAmount]=useState(10000);
+const currentValue = shares * stock.price;
 
+const investedValue = shares * costPrice;
 
-const shares = stock?.price
-? amount / stock.price
-: 0;
+const profit = currentValue - investedValue;
 
+const returnPercent = (profit / investedValue) * 100;
 
-const futurePrice = stock?.price
-? stock.price * 1.12
-: 0;
+return (
 
+<div className="page">
 
-const futureValue = shares * futurePrice;
+<div className="card">
 
+<div className="card-title">
 
-const profit = futureValue - amount;
-
-
-
-return(
-
-<div className="page-container">
-
-
-<div className="page-title">
-
-Portfolio Simulator
+Portfolio Tracker
 
 </div>
 
 
-<div className="valuation-card">
+<div className="portfolio-grid">
 
+<div className="metric">
 
-<div className="valuation-input-group">
-
-
-<label>
-
-Investment Amount ($)
-
-</label>
-
+<span>Shares Owned</span>
 
 <input
 
-type="number"
+value={shares}
 
-value={amount}
+onChange={(e)=>setShares(e.target.value)}
 
-onChange={(e)=>setAmount(e.target.value)}
-
-className="valuation-input"
+className="portfolio-input"
 
 />
 
+</div>
+
+
+<div className="metric">
+
+<span>Invested Value</span>
+
+<b>
+
+${investedValue.toFixed(2)}
+
+</b>
 
 </div>
 
 
+<div className="metric">
 
-<div className="valuation-results">
+<span>Current Value</span>
 
+<b>
 
+${currentValue.toFixed(2)}
 
-<div className="valuation-box">
-
-<div className="valuation-label">
-
-Shares Owned
-
-</div>
-
-<div className="valuation-value">
-
-{shares.toFixed(2)}
-
-</div>
+</b>
 
 </div>
 
 
+<div className="metric">
 
-<div className="valuation-box">
+<span>Profit / Loss</span>
 
-<div className="valuation-label">
-
-Future Value
-
-</div>
-
-<div className="valuation-value">
-
-${futureValue.toFixed(2)}
-
-</div>
-
-</div>
-
-
-
-<div className="valuation-box">
-
-<div className="valuation-label">
-
-Profit
-
-</div>
-
-<div className="valuation-value">
+<b style={{color: profit>=0 ? "#00ffaa" : "#ff4d4d"}}>
 
 ${profit.toFixed(2)}
 
-</div>
+</b>
 
 </div>
 
 
+<div className="metric">
+
+<span>Return %</span>
+
+<b style={{color: profit>=0 ? "#00ffaa" : "#ff4d4d"}}>
+
+{returnPercent.toFixed(2)}%
+
+</b>
 
 </div>
 
-
-
 </div>
 
-
+</div>
 
 </div>
 
@@ -138,5 +107,4 @@ ${profit.toFixed(2)}
 
 }
 
-
-export default Portfolio; 
+export default Portfolio;

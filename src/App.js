@@ -63,7 +63,7 @@ previousClose: data.previousClose || 0
 
 });
 
-generateChart(data.price || 264.58);
+setChartData(data.price || 264.58);
 
 }
 
@@ -75,32 +75,7 @@ generateChart(264.58);
 
 });
 
-}, []);
-
-
-
-
-
-function generateChart(price){
-
-const temp=[];
-
-for(let i=0;i<30;i++){
-
-temp.push({
-
-time:i,
-
-price:price + Math.random()*4 -2
-
-});
-
-}
-
-setChartData(temp);
-
-}
-
+}, []); 
 
 
 

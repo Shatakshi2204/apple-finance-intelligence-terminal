@@ -42,6 +42,16 @@ price: quoteData.c,
 
 change: quoteData.dp,
 
+volume: quoteData.v,
+
+high: quoteData.h,
+
+low: quoteData.l,
+
+open: quoteData.o,
+
+previousClose: quoteData.pc,
+
 chart: chart
 
 });
@@ -59,3 +69,4 @@ price:null
 }
 
 }
+
